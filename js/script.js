@@ -1,1 +1,72 @@
+$(document).ready(function () {
 
+
+    //animation
+    var wow = new WOW;
+    wow.init();
+
+    // home-slider
+    $('.home-slider').slick({
+        dots: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        speed: 1000,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        nextArrow: '.home-left-arrow',
+        prevArrow: '.home-right-arrow'
+    });
+
+    // reviews-slider
+    $('.reviews-slider').slick({
+        dots: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        nextArrow: '.rewiews-left-arrow',
+        prevArrow: '.rewiews-right-arrow'
+    });
+
+    // clients-slider
+    $('.clients-slider').slick({
+        dots: false,
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrow: false
+    });
+
+    //menu
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 1) {
+            $(".header").css("background-color", "#95e1d3");
+        } else {
+            $(".header").css("background-color", "transparent");
+        }
+    });
+
+    //for counter
+
+    $('.counter').counterUp({
+        delay: 10,
+        time: 1000
+    });
+
+
+    //Mix It Up
+    // $(".grid-container").mixItUp();
+
+    //Parallax 
+    $('.parallax-people').parallax({
+        imageSrc: './images/people_bg.jpg'
+    });
+
+
+
+});
