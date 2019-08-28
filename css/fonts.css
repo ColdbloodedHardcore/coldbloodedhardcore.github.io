@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url(../Fonts/OpenSans.ttf);
+} 
+
+@font-face {
+    font-family: 'Kaushan Script';
+    src: url(../fonts/Kaushan\ Script.ttf);
+} 
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url(../fonts/Montserrat-Bold.ttf);
+} 
+
+@font-face {
+    font-family: 'Brush Script Std';
+    src: url(../fonts/BrushScriptStd.otf);
+} 
