@@ -32,7 +32,7 @@ $(document).ready(function () {
     });
 
     // clients-slider
-    if ($(window).width() <= 360) {
+    if ($(window).width() <= 540) {
         $('.clients-slider').slick({
             slidesToShow: 3,
             slidesToScroll: 1,
