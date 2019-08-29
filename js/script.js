@@ -4,6 +4,12 @@ $(document).ready(function () {
     //animation
     var wow = new WOW;
     wow.init();
+    
+     if ($(window).width() <= 539) {
+        $('#about-slide, #about-slide, #about-slide').removeClass('slideInDown').addClass('slideInLeft');
+    } else {
+        $('#about-slide, #about-slide, #about-slide').removeClass('slideInLeft').addClass('slideInDown');
+    }    
 
     // home-slider
     $('.home-slider').slick({
