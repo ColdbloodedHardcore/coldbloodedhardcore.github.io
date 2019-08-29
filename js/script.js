@@ -6,9 +6,16 @@ $(document).ready(function () {
     wow.init();
     
      if ($(window).width() <= 539) {
-        $('#about-slide, #about-slide, #about-slide').removeClass('slideInDown').addClass('slideInLeft');
+        $('#about-slide, #about-slide').removeClass('slideInDown').addClass('slideInLeft');
+        $('#about-slide-right').removeClass('slideInDown').addClass('flipInX');
+        $('#design-down').removeClass('slideInRight').addClass('flash');
+        $('#team-left').removeClass('slideInDown').addClass('slideInLeft');
+        $('#team-down').removeClass('slideInDown').addClass('slideInUp');
     } else {
         $('#about-slide, #about-slide, #about-slide').removeClass('slideInLeft').addClass('slideInDown');
+        $('#design-down').removeClass('flash').addClass('slideInRight');
+        $('#team-left').removeClass('slideInLeft').addClass('slideInDown');
+        $('#team-down').removeClass('slideInUp').addClass('slideInDown');
     }    
 
     // home-slider
