@@ -1,4 +1,4 @@
-@media screen and (max-width: 540px) {
+@media (min-width: 540px) and (max-width: 720px) {
 
     /* Burger Menu */
     .navigation {
@@ -301,7 +301,7 @@
 
     .navbar-dark .navbar-nav .nav-link {
         color: #fff;
-        font-size: 11px;
+        font-size: 10px;
         margin-top: 10px;
     }
 
@@ -547,6 +547,8 @@
         width: 33%;
     }
 
+
+    /* Animate */
     @-webkit-keyframes slideInRight {
         0% {
             opacity: 0;
@@ -579,4 +581,37 @@
         -webkit-animation-name: slideInRight;
         animation-name: slideInRight;
     }
+
+    @-webkit-keyframes slideInDown {
+        0% {
+          opacity: 0;
+          -webkit-transform: translateY(-150px);
+          transform: translateY(-150px);
+        }
+      
+        100% {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+        }
+      }
+      
+      @keyframes slideInDown {
+        0% {
+          opacity: 0;
+          -webkit-transform: translateY(-150px);
+          -ms-transform: translateY(-150px);
+          transform: translateY(-150px);
+        }
+      
+        100% {
+          -webkit-transform: translateY(0);
+          -ms-transform: translateY(0);
+          transform: translateY(0);
+        }
+      }
+      
+      .slideInDown {
+        -webkit-animation-name: slideInDown;
+        animation-name: slideInDown;
+      }
 }
