@@ -276,7 +276,7 @@
 
 }
 
-@media (min-width: 320px) and (max-width: 450px) {
+@media (min-width: 320px) and (max-width: 500px) {
     /* Burger Menu */
     .header {
         width: 100%;
