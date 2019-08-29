@@ -32,15 +32,24 @@ $(document).ready(function () {
     });
 
     // clients-slider
-    $('.clients-slider').slick({
-        dots: false,
-        infinite: true,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1500,
-        arrow: false
-    });
+    if ($(window).width() <= 360) {
+        $('.clients-slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1500
+        });
+    } else {
+        $('.clients-slider').slick({
+            dots: false,
+            infinite: true,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            arrow: false
+        });
+    }
 
     //menu
     $(window).scroll(function () {
