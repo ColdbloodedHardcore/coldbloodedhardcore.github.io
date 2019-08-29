@@ -60,13 +60,7 @@
 
     .home-right-arrow {
         right: 5%;
-    }
-    
-    .home .fa-chevron-down {
-    left: 48%;
-    bottom: 0%;
-    font-size: 30px;
-    }
+    }  
 
     /* About */
     .about-content {
@@ -361,7 +355,7 @@
 
     .home .fa-chevron-down {
         left: 48%;
-        bottom: -15%;
+        bottom: 0;
         font-size: 30px;
     }
 
