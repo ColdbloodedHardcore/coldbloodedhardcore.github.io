@@ -60,7 +60,7 @@
 
     .home-right-arrow {
         right: 5%;
-    }  
+    }
 
     /* About */
     .about-content {
@@ -557,4 +557,37 @@
         width: 33%;
     }
 
+    @-webkit-keyframes slideInRight {
+        0% {
+          opacity: 0;
+          -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+        }
+      
+        100% {
+          -webkit-transform: translateX(0);
+          transform: translateX(0);
+        }
+      }
+      
+      @keyframes slideInRight {
+        0% {
+          opacity: 0;
+          -webkit-transform: translateX(0px);
+          -ms-transform: translateX(0px);
+          transform: translateX(0px);
+        }
+      
+        100% {
+          -webkit-transform: translateX(0);
+          -ms-transform: translateX(0);
+          transform: translateX(0);
+        }
+      }
+      
+      .slideInRight {
+        -webkit-animation-name: slideInRight;
+        animation-name: slideInRight;
+      }
 }
+
