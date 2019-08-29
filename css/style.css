@@ -30,7 +30,7 @@ h6 {
     font-weight: normal;
     padding: 0 0 10px 0;
     font-weight: normal;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', serif;
     line-height: 50%;
     color: #01090c;
 }
@@ -183,7 +183,6 @@ p {
 .home-slider-content {
     position: relative;
     top: -70%;
-    left: 1.5%;
     z-index: 5;
 }
 

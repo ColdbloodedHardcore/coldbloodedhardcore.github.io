@@ -276,12 +276,12 @@
 
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 360px) {   
+    /* Burger Menu */
     .header {
         width: 360px;
     }
 
-    /* Burger Menu */
     .navigation {
         display: none;
     }
@@ -314,6 +314,15 @@
     }
 
     /* Home */
+    .home .row {
+        margin: 0;
+    }
+
+    .home-slider {
+        width: 360px;
+        left: -15px;
+    }
+
     .home-slider-content {
         padding-top: 50px;
     }
@@ -323,16 +332,17 @@
     }
 
     .home-slider-content h6 {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .home-slider-content .btn-start {
         margin-top: 20px;
+        padding: 10px 30px;
     }
 
     .home-left-arrow,
     .home-right-arrow {
-        top: 73%;
+        top: 68%;
     }
 
     .home-left-arrow {
@@ -393,7 +403,7 @@
     }
 
     .design-mobile-2 img {
-        left: 53%;
+        left: 50%;
         top: -220px;
         height: 300px;
         width: 180px;
@@ -456,6 +466,18 @@
     .clients-slider img {
         width: 100%;
     }
+
+    .clients .slick-prev,
+    .clients .slick-next {
+        visibility: hidden;
+    } 
+
+    .clients .slick-prev {
+        left: 25px;
+    }
+    .clients .slick-next {
+        right: 25px;
+    } 
 
     /* Grig */
     .content-box h4 {
