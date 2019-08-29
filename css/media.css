@@ -276,10 +276,10 @@
 
 }
 
-@media screen and (max-width: 360px) {   
+@media (min-width: 320px) and (max-width: 420px) {
     /* Burger Menu */
     .header {
-        width: 360px;
+        width: 100%;
     }
 
     .navigation {
@@ -313,18 +313,9 @@
         display: none;
     }
 
-    /* Home */
-    .home .row {
-        margin: 0;
-    }
-
-    .home-slider {
-        width: 360px;
-        left: -15px;
-    }
-
+    /* Home */      
     .home-slider-content {
-        padding-top: 50px;
+        top: -65%;
     }
 
     .home-slider-content h2 {
@@ -342,20 +333,13 @@
 
     .home-left-arrow,
     .home-right-arrow {
-        top: 68%;
-    }
-
-    .home-left-arrow {
-        left: 5%;
-    }
-
-    .home-right-arrow {
-        right: 5%;
+        top: 0;
+        visibility: hidden;
     }
 
     .home .fa-chevron-down {
         left: 48%;
-        bottom: 0;
+        bottom: 10%;
         font-size: 30px;
     }
 
@@ -369,15 +353,20 @@
     }
 
     .about-content img {
-        width: 310px;
-        height: 210px;
+        width: 100%;
+        height: 230px;
     }
 
     .about-content:after {
-        width: 310px;
-        height: 212px;
-        left: 1%;
-        top: 12%;
+        width: 85%;
+        height: 75%;
+        left: 2%;
+        top: 17%;
+    }
+
+    .about-content-box {
+        top: 40%;
+        left: 0;
     }
 
     /* Counter */
@@ -403,10 +392,10 @@
     }
 
     .design-mobile-2 img {
-        left: 50%;
-        top: -220px;
-        height: 300px;
-        width: 180px;
+        left: 55%;
+        top: -190px;
+        height: 250px;
+        width: 40%;
     }
 
     /* what-do-header */
@@ -429,32 +418,32 @@
         display: none;
         visibility: hidden;
     }
-    
+
     .rewiews-left-arrow {
-    left: 5%;
+        left: 5%;
     }
-    
+
     .rewiews-right-arrow {
-    right: 5%;
+        right: 5%;
     }
 
 
     /* Team */
     .team-content-image img {
-        width: 320px;
-        height: 360px;
+        width: 100%;
+        height: 100%;
         padding: 0;
     }
 
     .team-content-image:after {
-        width: 321px;
-        height: 361px;
-        left: -1px;
-        top: 26px;
+        width: 76%;
+        height: 68%;
+        left: 6%;
+        top: 11%;
     }
 
     .team-icon {
-        left: 29%;
+        left: 30%;
     }
 
 
@@ -470,14 +459,15 @@
     .clients .slick-prev,
     .clients .slick-next {
         visibility: hidden;
-    } 
+    }
 
     .clients .slick-prev {
         left: 25px;
     }
+
     .clients .slick-next {
         right: 25px;
-    } 
+    }
 
     /* Grig */
     .content-box h4 {
@@ -511,11 +501,11 @@
 
     .blog-block {
         padding-right: 0;
-        width: 330px;
+        width: 100%;
     }
 
     .blog-img img {
-        width: 330px;
+        width: 100%;
         padding-bottom: 20px;
     }
 
@@ -559,35 +549,34 @@
 
     @-webkit-keyframes slideInRight {
         0% {
-          opacity: 0;
-          -webkit-transform: translateX(0px);
-          transform: translateX(0px);
+            opacity: 0;
+            -webkit-transform: translateX(0px);
+            transform: translateX(0px);
         }
-      
+
         100% {
-          -webkit-transform: translateX(0);
-          transform: translateX(0);
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
         }
-      }
-      
-      @keyframes slideInRight {
+    }
+
+    @keyframes slideInRight {
         0% {
-          opacity: 0;
-          -webkit-transform: translateX(0px);
-          -ms-transform: translateX(0px);
-          transform: translateX(0px);
+            opacity: 0;
+            -webkit-transform: translateX(0px);
+            -ms-transform: translateX(0px);
+            transform: translateX(0px);
         }
-      
+
         100% {
-          -webkit-transform: translateX(0);
-          -ms-transform: translateX(0);
-          transform: translateX(0);
+            -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+            transform: translateX(0);
         }
-      }
-      
-      .slideInRight {
+    }
+
+    .slideInRight {
         -webkit-animation-name: slideInRight;
         animation-name: slideInRight;
-      }
+    }
 }
-

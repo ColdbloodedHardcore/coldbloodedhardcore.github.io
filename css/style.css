@@ -296,6 +296,7 @@ p {
     top: 0;
 }
 
+
 .about-content:hover::after {
     background: -webkit-gradient(linear, left top, right bottom, color-stop(-0.2, rgba(232, 132, 130, 0.9)), color-stop(1, rgba(239, 215, 137, 0.9)));
     background: -moz-linear-gradient(left top, rgba(232, 132, 130, 0.9) 0.2%, rgba(239, 215, 137, 0.9) 100%);
@@ -453,6 +454,7 @@ p {
 
 /* reviews */
 .reviews {
+    position: relative;
     background-color: #f8f8f8;
 }
 
@@ -509,11 +511,11 @@ p {
 }
 
 .rewiews-left-arrow {
-    left: -5%;
+    left: 10%;
 }
 
 .rewiews-right-arrow {
-    right: -5%;
+    right: 10%;
 }
 
 /* team */
