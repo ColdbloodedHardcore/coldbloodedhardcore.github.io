@@ -1,11 +1,55 @@
 $(document).ready(function () {
 
+    // pop up   
+    var popUp = $('.pop-up');
+    var overlay = $('.pop-up-overlay');
+    var close = $('.close-btn');
+
+    $('.btn-start').click(function () {
+        popUp.show();
+        overlay.show();
+    });
+
+    // close pop-up
+    close.click(function () {
+        popUp.hide();
+        overlay.hide();
+    });
+
+    // Close onclick out of pop-up
+    $(document).mouseup(function (e) {
+        if (!popUp.is(e.target) && popUp.has(e.target).length === 0) {
+            popUp.hide();
+            overlay.hide();
+        }
+    });
+
+    // form
+    $('.btn-submit').click(function () {
+        $('form').submit(function () {
+            $.ajax({
+                type: 'POST',
+                URL: 'http://httpbin.org/post',
+                beforeSend: function () {
+                    $('.done').show();
+                },
+                success: function () {    
+                    setTimeout(function () {
+                        popUp.hide();
+                        overlay.hide();
+                        $('.done').hide();
+                    }, 2000);
+                }
+            });
+        });
+    });
+
 
     //animation
     var wow = new WOW;
     wow.init();
-    
-     if ($(window).width() <= 539) {
+
+    if ($(window).width() <= 539) {
         $('#about-slide, #about-slide').removeClass('slideInDown').addClass('slideInLeft');
         $('#about-slide-right').removeClass('slideInDown').addClass('flipInX');
         $('#design-down').removeClass('slideInRight').addClass('flash');
@@ -16,7 +60,9 @@ $(document).ready(function () {
         $('#design-down').removeClass('flash').addClass('slideInRight');
         $('#team-left').removeClass('slideInLeft').addClass('slideInDown');
         $('#team-down').removeClass('slideInUp').addClass('slideInDown');
-    }    
+    }
+
+
 
     // home-slider
     $('.home-slider').slick({
@@ -45,7 +91,7 @@ $(document).ready(function () {
     });
 
     // clients-slider
-    if ($(window).width() <= 540) {
+    if ($(window).width() <= 539) {
         $('.clients-slider').slick({
             slidesToShow: 3,
             slidesToScroll: 1,
@@ -74,7 +120,6 @@ $(document).ready(function () {
     });
 
     //for counter
-
     $('.counter').counterUp({
         delay: 10,
         time: 1000
