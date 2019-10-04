@@ -78,8 +78,8 @@
                     <div class="home-slider-content">
                         <h2 class="wow fadeInLeftBig" data-wow-duration="1.5s">Creative Template</h2>
                         <h6 class="wow fadeInRightBig" data-wow-duration="1.5s">Welcome to Shopnomoy</h6>
-                        <a data-scroll class="btn btn-start wow fadeInUpBig" data-wow-duration="1.5s"
-                            href="#services">Start now</a>
+                        <button data-scroll class="btn btn-start wow fadeInUpBig" data-wow-duration="1.5s">Start
+                            now</button>
                     </div>
                 </div>
 
@@ -90,9 +90,8 @@
                             design</h2>
                         <h6 class="wow fadeInUpBig" data-wow-delay="3s" data-wow-duration="1.5s">Welcome to
                             Shopnomoy</h6>
-                        <a data-scroll class="btn btn-start wow fadeInRightBig" data-wow-duration="1.5s"
-                            data-wow-delay="3s" href="#services">Start
-                            now</a>
+                        <button data-scroll class="btn btn-start wow fadeInRightBig" data-wow-duration="1.5s"
+                            data-wow-delay="3s">Start now</button>
                     </div>
                 </div>
 
@@ -104,18 +103,52 @@
                             development</h2>
                         <h6 class="wow fadeInRightBig" data-wow-duration="1.5s" data-wow-delay="6.2s">Welcome to
                             Shopnomoy</h6>
-                        <a data-scroll class="btn btn-start wow fadeInUpBig" data-wow-duration="1.5s"
-                            data-wow-delay="6.2s" href="#services">Start now</a>
+                        <button data-scroll class="btn btn-start wow fadeInUpBig" data-wow-duration="1.5s"
+                            data-wow-delay="6.2s">Start now</button>
                     </div>
                 </div>
             </div>
-
 
             <!-- slider buttons -->
             <a id="home-left-arrow" class="home-left-arrow"><i class="fa fa-angle-left"></i></a>
             <a id="home-right-arrow" class="home-right-arrow"><i class="fa fa-angle-right"></i></a>
 
             <a id="tohash" href="#blog"><i class="fas fa-chevron-down"></i></a>
+
+            <!-- Pop Up -->
+            <div>
+                <div class="pop-up">
+                    <div class="close-btn">&times;</div>
+                    <div id="form">
+                        <h4 class="text-uppercase">Make an order</h4>
+                        <form class="was-validated" action="">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <input name="name" placeholder="Your Name" class="form-control" type="text"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <input name="email" placeholder="Your Email" class="form-control" type="email"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 offset-lg-8">
+                                    <button class="btn btn-submit" type="submit">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Pop Up Overlay -->
+                <div class="pop-up-overlay"></div>
+                <div class="done">
+                    <img src='./images/done/done.gif' alt="Done"/>
+                </div>
+            </div>
+
         </section>
 
         <section class="about-us text-center" id="about-us">
@@ -1016,10 +1049,10 @@
     <!-- jQuery -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <!-- Slick Slider-->
-    <script type="text/javascript" src="slick/slick.min.js"></script>
     <!-- Bootstrap -->
     <script src="./js/bootstrap.min.js"></script>
+    <!-- Slick Slider-->
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <!-- Counter -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
     <script src="./js/jquery.counterup.min.js"></script>
